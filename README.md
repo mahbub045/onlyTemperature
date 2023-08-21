@@ -48,7 +48,7 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 
 ## About the DS3231
-DS3231 is a low-cost integrated circuit (IC) providing a highly accurate, real time clock for use with Arduino, Raspberry Pi, BBC micro:bit and other popular small computing devices. 
+DS3231 is a low-cost integrated circuit (IC) providing a highly accurate, real-time clock for use with Arduino, Raspberry Pi, BBC micro: bit, and other popular small computing devices. 
 
 The IC is typically mounted on a circuit board or module, along with other hardware, such as header pins, supportive electrical components, and even EEPROM memory chips, for convenient attachment to a breadboard or an Arduino. 
 
@@ -56,22 +56,7 @@ Several different modules are available from a number of competing vendors. This
 
 DS3231 runs independently and can be kept running for a considerable length of time by a small, backup battery, even if power to the Arduino is turned off.
 
-* Seconds, 
-* Minutes, 
-* Hours
-    * 12-hour format with AM/PM indication, or
-    * 24-hour format,
-* Day of the Week,
-* Date of the Month, 
-* Month,  and
-* Year, with Leap-Year Compensation Valid Up to 2100"
-* Tempereture
-
-Data for the time and date are stored in registers (memory locations) on the DS3231. Each, distinct value is stored separately. This means the seconds are in one register, the minutes in another, and so forth. The DS3231 updates the values in the date and time registers every second.
-
-The device keeps track of time by operating its own 32.768 kHz crystal oscillator, similar to the timekeeper in an electronic watch. Temperature can affect oscillator speed. Accordingly, the DS3231 takes further steps to maintain accuracy. It senses the temperature around the crystal and adjusts the speed of the oscillator.
-
-The oscillator can be accessed directly, independent of the date and time registers, for use as an external timer or source of interrupts.
+* Temperature
 
 The temperature can be read from the DS3231 using a Library function. The data sheet declares it to be accurate to within 3 degrees, Celsius. 
 
@@ -83,7 +68,7 @@ Some popular modules mounting a DS3231 provide a receptacle for a coin battery, 
 
 It will switch back to V<sub>CC</sub> automatically, if and when that voltage rises back up above both the power-fail and the battery voltage level. 
 
-One point regarding the choice of battery may deserve consideration: the question of whether to install a rechargeable coin battery, or to disable a charging circuit if such a thing is provided on the module being used. The topic is controversial and the authors of this Library do not express any opinion about it. Readers may choose to search online for more information.
+One point regarding the choice of the battery may deserve consideration: the question of whether to install a rechargeable coin battery or to disable a charging circuit if such a thing is provided on the module being used. The topic is controversial and the authors of this Library do not express any opinion about it. Readers may choose to search online for more information.
 
 [back to top](#ds3231-library)
 <hr>
@@ -114,7 +99,7 @@ One point regarding the choice of battery may deserve consideration: the questio
 
 ### Third Method
 
-1. Download the code from github.
+1. Download the code from Git Hub.
 1. Upload the code into the Arduino.
 
 ## [Note: If you use my code, you can only follow the Installation step.]
