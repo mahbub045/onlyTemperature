@@ -79,18 +79,18 @@ void loop() {
   lcd.write(4);
   //temperature end
   ///////////////////////////////////////
-  if (Temperature <= 25.00) {
-    tempPosition = "     COLD       ";
-  } else if (Temperature >= 26.00 && Temperature <= 30.00) {
-    tempPosition = "  NORMAL COLD   ";
-  } else if (Temperature >= 31.00 && Temperature <= 35.00) {
-    tempPosition = "     NORMAL     ";
-  } else if (Temperature >= 36.00 && Temperature <= 40.00) {
-    tempPosition = "      HOT       ";
-  } else if (Temperature >= 41.00 && Temperature <= 43.00) {
-    tempPosition = "    VERY HOT    ";
-  } else if (Temperature >= 44.00) {
-    tempPosition = "  PRAIRIE FIRE  ";
+  if (Temperature <= 25.99) {
+    tempPosition = ">>>>>>COLD<<<<<<";
+  } else if (Temperature >= 26.00 && Temperature <= 30.99) {
+    tempPosition = ">>>NORMAL COLD<<";
+  } else if (Temperature >= 31.00 && Temperature <= 36.99) {
+    tempPosition = ">>>>>NORMAL<<<<<";
+  } else if (Temperature >= 37.00 && Temperature <= 40.99) {
+    tempPosition = ">>>>>>>HOT<<<<<<";
+  } else if (Temperature >= 41.00 && Temperature <= 43.99) {
+    tempPosition = ">>>EXTREME HOT<<";
+  } else if (Temperature >= 44.99) {
+    tempPosition = ">>PRAIRIE FIRE<<";
   }
   //////////////////////////////////////
 }
